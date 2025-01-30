@@ -2,4 +2,45 @@
     width: 160px;
     height: 230px;
     overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.2s;
+    position: relative;
+    --position-details: 100%;
 }
+
+.pelicula-card:hover{
+    transform: translate3d(0, -1px, 0) scale(1.1);
+    cursor: pointer;
+    --position-details: 0%;
+}
+
+.pelicula-card-poster{
+    width: 100%;
+    height: 100%;
+}
+
+.pelicula-card-poster > img{
+    width: 100%;
+    height: 100%;
+}
+
+.pelicula-card-datos {
+    background-color: var(--text-color-secondary);
+    color: var(--background-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(var(--position-details));
+    transition: transform 0.2s;
+    padding: 0 15px 20px 10px;
+}
+
+.pelicula-card-anyo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 7px;
+}
+

@@ -3,6 +3,7 @@ import { useState } from "react"
 import Pelicula from "../pelicula/Pelicula"
 import { getAllFilms } from "../Pelicula/peliculaApi";
 import PeliculaCard from "../peliculaCard/PeliculaCard";
+import "/src/app/listapeliculas/listapeliculas.css"
 
 const ListaPeliculas = () => {
     const [listaPeliculas, setListaPleiculas] = useState([]);
