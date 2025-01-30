@@ -1,0 +1,8 @@
+
+th {
+    color: white;
+    text-align: left;
+    padding: 10px;
+    background-color: var(--primary-color);
+    font-size: 1.3em;
+}
